@@ -16,16 +16,20 @@
         }
 
         body {
-    background-image: url("assets/em-construcao.jpg");
-    background-size: cover;
-    background-position: center;
-}
+            min-height: 100vh;
+            background-image: url("assets/em-construcao.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; /* Desktop */
+            background-color: #ffffff; /* cor da borda */
+        }
 
+        /* Celular */
         @media (max-width: 768px) {
             body {
-                background-image: url("assets/em-construcao-mobile.jpg");
-    }
-}
+                background-size: contain;
+            }
+        }
     </style>
 </head>
 <body>
