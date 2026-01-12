@@ -21,13 +21,14 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover; /* Desktop */
-            background-color: #ffffff; /* cor da borda */
+            background-color: #ffffff;
         }
 
-        /* Celular */
+        /* Autoajuste para celular */
         @media (max-width: 768px) {
             body {
-                background-size: contain;
+                background-size: contain;   /* não corta */
+                background-position: center;
             }
         }
     </style>
