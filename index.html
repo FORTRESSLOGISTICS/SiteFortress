@@ -8,21 +8,33 @@
     <meta name="robots" content="noindex, nofollow">
 
     <style>
+        /* Reset básico */
         html, body {
+            margin: 0;
+            padding: 0;
             width: 100%;
             height: 100%;
-            margin: 0;
         }
 
         body {
+            min-height: 100vh;
             background-image: url("assets/em-construcao.jpg");
             background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+            background-position: center;
+            background-size: cover; /* Desktop ocupa tudo */
+            background-color: #ffffff;
+        }
+
+        /* Mobile (troca automática da imagem) */
+        @media (max-width: 768px) {
+            body {
+                background-image: url("assets/em-construcao-mobile.jpg");
+                background-size: cover; /* Mobile também full */
+                background-position: center;
+            }
         }
     </style>
 </head>
-
 <body>
 </body>
 </html>
